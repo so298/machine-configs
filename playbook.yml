@@ -46,6 +46,6 @@
   roles:
     - mpi
     - jupyterlab
-    - pytorch
+#    - pytorch
 #    - tensorflow
     
