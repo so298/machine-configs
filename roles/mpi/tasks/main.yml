@@ -6,8 +6,9 @@
 - name: add path for OpenMPI to system-wide bashrc
   blockinfile:
     path: /etc/bash.bashrc
+    # Set MPIROOT=/usr/mpi/gcc/openmpi-4.1.5a1/ for Ubuntu 22.04
     block: |
-      MPIROOT=/usr/mpi/gcc/openmpi-4.0.4rc3
+      MPIROOT=/usr/mpi/gcc/openmpi-4.1.5a1/
       PATH=$MPIROOT/bin:$PATH
       LD_LIBRARY_PATH=$MPIROOT/lib:$LD_LIBRARY_PATH
       MANPATH=$MPIROOT/share/man:$MANPATH
